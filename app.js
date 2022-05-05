@@ -12,6 +12,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.set('port', process.env.PORT || 9000); //포트번호 추가 220506
 
 app.use(logger('dev'));
 app.use(express.json());
